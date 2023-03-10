@@ -11,7 +11,7 @@ cols=['age','workclass','education','marital-status','occupation','relationship'
 
 @app.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('dashboard.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
