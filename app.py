@@ -11,7 +11,7 @@ cols=['age','workclass','education','marital-status','occupation','relationship'
 
 @app.route('/')
 def home():
-    return render_template('dashboard.html')
+    return render_template('index.html')
 
 @app.route('/predict',methods=['POST'])
 def predict():
@@ -27,7 +27,7 @@ def predict():
     else:
         text = "<=50K"
 
-    return render_template('dashboard.html', prediction_text='Employee Income is {}'.format(text))
+    return render_template('index.html', prediction_text='Employee Income is {}'.format(text))
 
 
 if __name__ == "__main__":
