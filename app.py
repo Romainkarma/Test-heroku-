@@ -27,8 +27,8 @@ def predict():
     else:
         text = "<=50K"
 
-    return render_template('index.html', prediction_text='Employee Income is {}'.format(text))
+    return render_template('dashboard.html', prediction_text='Employee Income is {}'.format(text))
 
 
 if __name__ == "__main__":
-    app.run(port=3000,debug=True)
+    app.run(port=3000)
